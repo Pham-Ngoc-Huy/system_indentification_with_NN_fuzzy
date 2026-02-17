@@ -2,7 +2,7 @@ from .transpose import transpose
 import math
 from .scalar_multiply import scalar_multiply, projection
 from .operator import add, subtract
-def QR_algorithm(matrix):
+def QR_decomposition(matrix):
     Q = []
     R = [[0]*len(transpose(matrix)) for _ in range(len(transpose(matrix)))] ## create matrix 0
 
