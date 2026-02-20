@@ -31,3 +31,4 @@ def QR_decomposition(matrix):
             q = [c/norm for c in a_perpen]
             Q.append(q)
     return Q,R
+

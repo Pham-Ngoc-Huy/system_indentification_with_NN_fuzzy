@@ -1,13 +1,15 @@
-def matrix_multiply(matrix_a, matrix_b):
-    num_cols = len(matrix_a[0])
-    num_rows = len(matrix_b)
+def matrix_multiply(A, B):
+    rows = len(A)
+    cols = len(B[0])
+    inner = len(A[0]) # the matching between A_rows and B_cols
 
-    result_matrix = [[0 for _ in range(len(matrix_b[0]))] for _ in range(len(matrix_a))]
-    if num_cols == num_rows:
-        for row in range(len(matrix_a)):
-            result = 0
-            for col in range(len(matrix_b[0])):
-                for k in range(len(matrix_a[0])):
-                    result += matrix_a[row][k]*matrix_b[k][col]
-                result_matrix[row][col] = result
-    return result_matrix
+    result = [[0 for _ in range(cols)] for _ in range(rows)]
+
+    for i in range(rows):
+        for j in range(cols):
+            s = 0
+            for k in range(inner):
+                s += A[i][k] * B[k][j]
+            result[i][j] = s
+
+    return result
