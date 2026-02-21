@@ -12,9 +12,9 @@
 
         Quantum computation uses **qubits** instead of classical bits. Unlike classical bits that can only be `0` or `1`, a qubit can exist in a **superposition** of both states:
 
-        $$
+        $
         |\psi\rangle = \alpha |0\rangle + \beta |1\rangle
-        $$
+        $
 
         where:
 
@@ -31,9 +31,9 @@
 
         For example, a 2-qubit system must represent:
 
-        $$
+        $
         |00\rangle,\ |01\rangle,\ |10\rangle,\ |11\rangle
-        $$
+        $
 
         This corresponds to a **4-dimensional space**.
 
@@ -45,9 +45,9 @@
 
         To correctly combine quantum systems, we use the **Kronecker product**, also known as the tensor product.
 
-        $$
+        $
         |\psi_{total}\rangle = |\psi_1\rangle \otimes |\psi_2\rangle
-        $$
+        $
 
         This operation creates a new vector that represents the full joint quantum system.
 
@@ -70,19 +70,19 @@
 
         Single qubit state:
 
-        $$
+        $
         |0\rangle =
         \begin{bmatrix}
         1\\
         0
         \end{bmatrix}
-        $$
+        $
 
         Two qubits:
 
-        $$
+        $
         |00\rangle = |0\rangle \otimes |0\rangle
-        $$
+        $
 
         MATLAB example:
 
