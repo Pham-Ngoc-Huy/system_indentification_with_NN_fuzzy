@@ -18,8 +18,13 @@
 
         where:
 
-        - $ \alpha, \beta \in \mathbb{C} $ are complex probability amplitudes  
-        - $ |\alpha|^2 + |\beta|^2 = 1 $
+        -   $$
+            |\alpha, \beta \in \mathbb{C} 
+            $$ 
+            are complex probability amplitudes  
+        -   $$ 
+            |\alpha|^2 + |\beta|^2 = 1 
+            $$
 
         This means even a single qubit exists in a **2-dimensional vector space**.
 
