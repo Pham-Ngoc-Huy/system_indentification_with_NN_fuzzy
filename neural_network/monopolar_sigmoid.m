@@ -1,6 +1,7 @@
 % can use other activation functions instead of sigmoid,
 % as long as the output is bounded in [0,1].
 % choice of function may affect smoothness and gradient behavior. -> hàm kích hoạt phải thỏa là sẽ tăng dần từ 0 -> 1
-function output = sigmoid(var)
-    output = 1/ (1+exp(-var));
+function output = monopolar_sigmoid(~)
+    output =@(var) 1./(1+exp(-var));
 end
+
