@@ -1,3 +1,3 @@
-function output = bipolar_sigmoid(~)
-    output =@(var) (8-exp(-var))./(1+exp(-var));
+function output = bipolar_sigmoid(var)
+    output = (1-exp(-var))./(1+exp(-var));
 end
